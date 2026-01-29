@@ -1,0 +1,45 @@
+{
+  "name": "@1inch-examples/intent-swap",
+  "version": "1.0.0",
+  "description": "1inch Intent Swap SDK examples for EVM and Solana",
+  "scripts": {
+    "start": "tsx src/evm/swap-erc20.ts",
+    "evm:swap-erc20": "tsx src/evm/swap-erc20.ts",
+    "evm:swap-native": "tsx src/evm/swap-native.ts",
+    "evm:swap-permit2": "tsx src/evm/swap-with-permit2.ts",
+    "evm:websocket": "tsx src/evm/websocket-order-tracking.ts",
+    "solana:swap": "tsx src/solana/swap-sol-to-jup.ts",
+    "solana:cancel": "tsx src/solana/cancel-order/cancel-order.ts",
+    "solana:websocket": "tsx src/solana/websocket-order-tracking.ts"
+  },
+  "dependencies": {
+    "@1inch/fusion-sdk": "^2.4.5",
+    "@1inch/solana-fusion-sdk": "0.1.16",
+    "@solana/web3.js": "^1.98.0",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "keywords": [
+    "1inch",
+    "fusion",
+    "intent-swap",
+    "defi",
+    "ethereum",
+    "solana",
+    "swap",
+    "ethers",
+    "viem"
+  ],
+  "author": "1inch Network",
+  "license": "MIT"
+}
