@@ -51,18 +51,42 @@ const sdk = createFusionSDK(config, provider.web3Like);
 
 | Script                         | Description                    | Command                    |
 | ------------------------------ | ------------------------------ | -------------------------- |
+| `src/evm/quick-start.ts`       | **Minimal quick start**        | `npm run quick-start`      |
 | `src/evm/swap-erc20.ts`        | Swap ERC-20 to ERC-20          | `npm run evm:swap-erc20`   |
 | `src/evm/swap-native.ts`       | Swap native ETH to ERC-20      | `npm run evm:swap-native`  |
 | `src/evm/swap-with-permit2.ts` | Gasless approvals with Permit2 | `npm run evm:swap-permit2` |
 
 ### Solana Examples
 
-| Script                          | Description            | Command                 |
-| ------------------------------- | ---------------------- | ----------------------- |
-| `src/solana/swap-sol-to-jup.ts` | Swap native SOL to JUP | `npm run solana:swap`   |
-| `src/solana/cancel-order.ts`    | Cancel an active order | `npm run solana:cancel` |
+| Script                          | Description             | Command                      |
+| ------------------------------- | ----------------------- | ---------------------------- |
+| `src/solana/quick-start.ts`     | **Minimal quick start** | `npm run solana:quick-start` |
+| `src/solana/swap-sol-to-jup.ts` | Swap native SOL to JUP  | `npm run solana:swap`        |
+| `src/solana/cancel-order.ts`    | Cancel an active order  | `npm run solana:cancel`      |
 
 ## Quick Start
+
+### Minimal Example (Recommended for First-Time Users)
+
+For the simplest possible integration, run a quick-start example:
+
+```bash
+npm install
+cp .env.example .env  # Add your API_KEY and private keys
+
+# EVM (Ethereum)
+npm run quick-start
+
+# Solana
+npm run solana:quick-start
+```
+
+These single-file examples demonstrate:
+
+- `src/evm/quick-start.ts` — USDC → 1INCH swap on Ethereum (~65 lines)
+- `src/solana/quick-start.ts` — SOL → JUP swap on Solana (~95 lines)
+
+### Full Setup
 
 ### 1. Install Dependencies
 
